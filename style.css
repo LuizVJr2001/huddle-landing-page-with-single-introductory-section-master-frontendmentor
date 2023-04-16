@@ -31,12 +31,8 @@ main {
     height: 70vh;
 }
 
-.container__images img {
-    height: 90%;
-}
-
 .container__content {
-    color: white;
+    color: rgba(255, 255, 255, 0.849);
     width: 30%;
     box-sizing: border-box;
     padding: 40px;
@@ -81,4 +77,60 @@ footer {
     border-radius: 100%;
     padding: 10px;
     cursor: pointer;
+}
+
+@media (max-width: 440px) {
+
+    body {
+        background: url(/images/bg-mobile.svg);
+        background-color: hsl(257, 40%, 49%);
+    }
+
+    header {
+        margin: 30px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    main {
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .container__images {
+        text-align: center;
+        margin-top: 40px;
+        height: auto;
+    }
+
+    .container__images img {
+        width: 85%;
+    }
+
+    .container__content {
+        width: 100%;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .container__content h2 {
+        font-size: 1.5rem;
+    }
+
+    .container__content__button {
+        width: 70%;
+    }
+
+    footer {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .social_icons {
+        position: inherit;
+        margin: 30px auto;
+    }
 }
